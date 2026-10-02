@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lab · Romain François</title>
+  <meta name="description" content="Projets perso de Romain François, développeur backend.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fond animé : hiraganas et katakana qui flottent (100 % CSS) -->
+  <div class="kana-sky" aria-hidden="true">
+    <span style="--x:1.1%;--s:5.05rem;--d:50.8s;--delay:-20.7s;--drift:-95px;--r:19deg;--o:0.28;--blur:0.0px">ワ</span>
+    <span class="g" style="--x:2.3%;--s:2.19rem;--d:48.5s;--delay:-7.9s;--drift:-76px;--r:-22deg;--o:0.13;--blur:0.9px">タ</span>
+    <span style="--x:3.8%;--s:4.85rem;--d:42.4s;--delay:-1.5s;--drift:-41px;--r:-9deg;--o:0.27;--blur:0.0px">ど</span>
+    <span style="--x:6.1%;--s:1.74rem;--d:28.2s;--delay:-20.5s;--drift:-52px;--r:-11deg;--o:0.11;--blur:1.3px">ぜ</span>
+    <span style="--x:7.5%;--s:5.29rem;--d:49.2s;--delay:-18.0s;--drift:-67px;--r:23deg;--o:0.29;--blur:0.0px">が</span>
+    <span class="g" style="--x:9.7%;--s:2.46rem;--d:39.0s;--delay:-10.8s;--drift:-68px;--r:-20deg;--o:0.15;--blur:0.7px">む</span>
+    <span class="g" style="--x:10.5%;--s:2.2rem;--d:50.8s;--delay:-21.4s;--drift:37px;--r:-15deg;--o:0.14;--blur:0.9px">ヴ</span>
+    <span style="--x:11.8%;--s:1.21rem;--d:36.5s;--delay:-5.1s;--drift:-56px;--r:-14deg;--o:0.09;--blur:1.8px">イ</span>
+    <span style="--x:13.9%;--s:3.27rem;--d:30.1s;--delay:-5.0s;--drift:-68px;--r:16deg;--o:0.19;--blur:0.0px">ガ</span>
+    <span style="--x:15.8%;--s:4.38rem;--d:25.6s;--delay:-23.8s;--drift:79px;--r:-20deg;--o:0.24;--blur:0.0px">げ</span>
+    <span class="g" style="--x:17.0%;--s:4.23rem;--d:31.1s;--delay:-21.7s;--drift:25px;--r:-10deg;--o:0.24;--blur:0.0px">ポ</span>
+    <span style="--x:19.5%;--s:5.46rem;--d:46.9s;--delay:-37.7s;--drift:93px;--r:-22deg;--o:0.3;--blur:0.0px">オ</span>
+    <span class="g" style="--x:20.8%;--s:4.33rem;--d:51.1s;--delay:-15.8s;--drift:-28px;--r:-12deg;--o:0.24;--blur:0.0px">ぶ</span>
+    <span style="--x:22.2%;--s:5.47rem;--d:27.0s;--delay:-2.1s;--drift:-100px;--r:-8deg;--o:0.3;--blur:0.0px">ト</span>
+    <span class="g" style="--x:23.4%;--s:3.94rem;--d:36.4s;--delay:-18.8s;--drift:71px;--r:-14deg;--o:0.22;--blur:0.0px">づ</span>
+    <span class="g" style="--x:26.1%;--s:1.28rem;--d:31.7s;--delay:-18.7s;--drift:74px;--r:-13deg;--o:0.09;--blur:1.7px">ご</span>
+    <span class="g" style="--x:27.2%;--s:2.1rem;--d:49.6s;--delay:-32.5s;--drift:-81px;--r:18deg;--o:0.13;--blur:1.0px">ハ</span>
+    <span class="g" style="--x:29.3%;--s:2.05rem;--d:36.6s;--delay:-23.2s;--drift:51px;--r:-25deg;--o:0.13;--blur:1.0px">ソ</span>
+    <span class="g" style="--x:31.0%;--s:4.73rem;--d:51.0s;--delay:-50.4s;--drift:-40px;--r:-13deg;--o:0.26;--blur:0.0px">ゆ</span>
+    <span style="--x:32.3%;--s:1.74rem;--d:39.5s;--delay:-3.1s;--drift:99px;--r:-20deg;--o:0.11;--blur:1.3px">り</span>
+    <span class="g" style="--x:35.0%;--s:1.83rem;--d:36.1s;--delay:-24.5s;--drift:94px;--r:8deg;--o:0.12;--blur:1.2px">デ</span>
+    <span class="g" style="--x:35.0%;--s:3.36rem;--d:50.5s;--delay:-48.8s;--drift:-50px;--r:21deg;--o:0.19;--blur:0.0px">ヤ</span>
+    <span class="g" style="--x:37.3%;--s:2.87rem;--d:36.9s;--delay:-24.6s;--drift:-69px;--r:-12deg;--o:0.17;--blur:0.3px">サ</span>
+    <span style="--x:39.9%;--s:1.25rem;--d:46.7s;--delay:-43.7s;--drift:22px;--r:10deg;--o:0.09;--blur:1.8px">マ</span>
+    <span style="--x:40.7%;--s:3.04rem;--d:36.6s;--delay:-36.3s;--drift:-32px;--r:17deg;--o:0.18;--blur:0.1px">ぼ</span>
+    <span class="g" style="--x:43.2%;--s:2.73rem;--d:27.8s;--delay:-22.0s;--drift:87px;--r:-18deg;--o:0.16;--blur:0.4px">ホ</span>
+    <span style="--x:44.0%;--s:3.53rem;--d:30.3s;--delay:-24.3s;--drift:22px;--r:-17deg;--o:0.2;--blur:0.0px">で</span>
+    <span style="--x:46.4%;--s:5.45rem;--d:42.4s;--delay:-6.4s;--drift:87px;--r:17deg;--o:0.3;--blur:0.0px">ベ</span>
+    <span style="--x:47.8%;--s:1.77rem;--d:28.3s;--delay:-8.1s;--drift:-29px;--r:18deg;--o:0.11;--blur:1.3px">ぺ</span>
+    <span style="--x:49.5%;--s:1.94rem;--d:31.6s;--delay:-1.9s;--drift:-94px;--r:-23deg;--o:0.12;--blur:1.1px">よ</span>
+    <span style="--x:51.1%;--s:1.8rem;--d:26.9s;--delay:-25.0s;--drift:72px;--r:13deg;--o:0.11;--blur:1.3px">に</span>
+    <span style="--x:52.5%;--s:1.44rem;--d:47.2s;--delay:-10.1s;--drift:-65px;--r:-16deg;--o:0.1;--blur:1.6px">ス</span>
+    <span style="--x:54.2%;--s:1.81rem;--d:47.8s;--delay:-38.6s;--drift:27px;--r:-19deg;--o:0.12;--blur:1.3px">た</span>
+    <span style="--x:55.2%;--s:2.47rem;--d:29.9s;--delay:-13.9s;--drift:21px;--r:8deg;--o:0.15;--blur:0.7px">ふ</span>
+    <span style="--x:57.7%;--s:4.42rem;--d:42.1s;--delay:-6.8s;--drift:46px;--r:19deg;--o:0.25;--blur:0.0px">ず</span>
+    <span class="g" style="--x:59.6%;--s:4.36rem;--d:48.7s;--delay:-17.6s;--drift:-50px;--r:8deg;--o:0.24;--blur:0.0px">お</span>
+    <span style="--x:61.1%;--s:4.91rem;--d:40.0s;--delay:-39.8s;--drift:94px;--r:9deg;--o:0.27;--blur:0.0px">ザ</span>
+    <span style="--x:62.0%;--s:3.44rem;--d:34.4s;--delay:-34.1s;--drift:35px;--r:-14deg;--o:0.2;--blur:0.0px">ペ</span>
+    <span style="--x:64.4%;--s:3.14rem;--d:37.9s;--delay:-7.2s;--drift:-52px;--r:-15deg;--o:0.18;--blur:0.1px">ぐ</span>
+    <span style="--x:65.4%;--s:3.2rem;--d:25.1s;--delay:-21.6s;--drift:-24px;--r:19deg;--o:0.18;--blur:0.0px">コ</span>
+    <span style="--x:67.9%;--s:4.32rem;--d:51.8s;--delay:-19.5s;--drift:24px;--r:24deg;--o:0.24;--blur:0.0px">ブ</span>
+    <span style="--x:70.0%;--s:1.97rem;--d:30.4s;--delay:-22.3s;--drift:27px;--r:22deg;--o:0.12;--blur:1.1px">へ</span>
+    <span style="--x:70.2%;--s:2.57rem;--d:33.9s;--delay:-19.1s;--drift:96px;--r:-19deg;--o:0.15;--blur:0.6px">を</span>
+    <span style="--x:72.3%;--s:2.2rem;--d:45.9s;--delay:-36.4s;--drift:-96px;--r:9deg;--o:0.14;--blur:0.9px">こ</span>
+    <span style="--x:73.7%;--s:1.67rem;--d:45.0s;--delay:-42.1s;--drift:-98px;--r:10deg;--o:0.11;--blur:1.4px">ひ</span>
+    <span class="g" style="--x:75.2%;--s:4.49rem;--d:37.9s;--delay:-1.2s;--drift:86px;--r:-18deg;--o:0.25;--blur:0.0px">ギ</span>
+    <span style="--x:76.9%;--s:1.35rem;--d:43.5s;--delay:-18.0s;--drift:-97px;--r:12deg;--o:0.09;--blur:1.7px">め</span>
+    <span style="--x:79.1%;--s:3.3rem;--d:50.9s;--delay:-19.0s;--drift:-66px;--r:16deg;--o:0.19;--blur:0.0px">そ</span>
+    <span style="--x:80.7%;--s:3.95rem;--d:44.1s;--delay:-25.9s;--drift:49px;--r:-17deg;--o:0.22;--blur:0.0px">あ</span>
+    <span class="g" style="--x:83.0%;--s:5.07rem;--d:45.0s;--delay:-15.5s;--drift:-41px;--r:17deg;--o:0.28;--blur:0.0px">う</span>
+    <span class="g" style="--x:83.9%;--s:2.05rem;--d:25.3s;--delay:-4.7s;--drift:-21px;--r:-10deg;--o:0.13;--blur:1.0px">パ</span>
+    <span class="g" style="--x:85.2%;--s:3.45rem;--d:27.2s;--delay:-11.0s;--drift:-46px;--r:-17deg;--o:0.2;--blur:0.0px">ロ</span>
+    <span class="g" style="--x:88.0%;--s:2.07rem;--d:39.9s;--delay:-9.8s;--drift:93px;--r:13deg;--o:0.13;--blur:1.0px">ウ</span>
+    <span style="--x:88.9%;--s:5.12rem;--d:34.0s;--delay:-26.7s;--drift:-93px;--r:-10deg;--o:0.28;--blur:0.0px">ね</span>
+    <span style="--x:91.3%;--s:3.65rem;--d:29.1s;--delay:-27.0s;--drift:-52px;--r:9deg;--o:0.21;--blur:0.0px">ば</span>
+    <span class="g" style="--x:91.9%;--s:2.6rem;--d:42.6s;--delay:-27.9s;--drift:57px;--r:-19deg;--o:0.15;--blur:0.5px">ニ</span>
+    <span class="g" style="--x:93.5%;--s:2.53rem;--d:46.2s;--delay:-34.8s;--drift:-59px;--r:22deg;--o:0.15;--blur:0.6px">シ</span>
+    <span class="g" style="--x:96.1%;--s:3.05rem;--d:30.5s;--delay:-11.4s;--drift:85px;--r:12deg;--o:0.18;--blur:0.1px">セ</span>
+    <span style="--x:97%;--s:4.29rem;--d:25.3s;--delay:-15.8s;--drift:75px;--r:-9deg;--o:0.24;--blur:0.0px">ゴ</span>
+    <span class="g" style="--x:97%;--s:1.24rem;--d:30.0s;--delay:-26.1s;--drift:21px;--r:18deg;--o:0.09;--blur:1.8px">ミ</span>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html#accueil" class="logo" aria-label="Romain François, retour à l'accueil">
+        <span class="logo__seal">ロ</span>
+        <span class="logo__text">Romain François<small lang="ja">ロマン・フランソワ</small></span>
+      </a>
+
+      <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+
+      <nav id="menu" class="nav">
+        <a href="index.html#profil">Profil</a>
+        <a href="index.html#parcours">Parcours</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="lab.html" class="is-active" aria-current="page">Lab</a>
+        <a href="index.html#contact" class="nav__cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--page">
+      <div class="container">
+        <p class="kicker">ラボ · Lab</p>
+        <h1 class="hero__title hero__title--page">Projets <span class="ink">perso</span></h1>
+        <p class="hero__lead">
+          En dehors du travail, je construis des applications pour des besoins concrets, les miens
+          ou ceux de passionnés. Les dépôts sont privés, mais je peux vous en parler en détail.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--flush">
+      <div class="container">
+        <div class="lab">
+
+          <article class="project reveal">
+            <span class="project__kana" aria-hidden="true">ポ</span>
+            <div class="project__top mono">
+              <span class="status status--live">En ligne</span>
+            </div>
+            <h2>Ce portfolio</h2>
+            <p>Site statique sans framework. Les kana du fond flottent grâce à une animation CSS, sans JavaScript.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__kana" aria-hidden="true">ウ</span>
+            <div class="project__top mono">
+              <span class="status status--wip">En cours</span>
+            </div>
+            <h2>MyWalletAssistant</h2>
+            <p>Gestion de budget personnel : transactions par catégorie, opérations récurrentes, paiements en plusieurs fois et carte à débit différé.</p>
+            <p>Les montants sont chiffrés en base. Tests unitaires, fonctionnels et E2E tournent en CI.</p>
+            <ul class="tags"><li>Laravel 13</li><li>Vue 3</li><li>Inertia</li><li>Tailwind CSS</li><li>PostgreSQL</li><li>Playwright</li><li>Docker</li></ul>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__kana" aria-hidden="true">ハ</span>
+            <div class="project__top mono">
+              <span class="status status--pause">En pause</span>
+            </div>
+            <h2>ColomboDex</h2>
+            <p>Application pour les colombophiles : chacun gère son colombier, ses pigeons, son club et son palmarès.</p>
+            <ul class="tags"><li>Symfony</li><li>Vue.js</li><li>Tailwind CSS</li></ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Romain François</span>
+      <span class="footer__jp">ありがとう</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
