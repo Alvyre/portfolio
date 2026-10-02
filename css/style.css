@@ -777,7 +777,13 @@ p { margin: 0 0 1em; }
 
   .nav.is-open { opacity: 1; translate: 0 0; visibility: visible; }
   .nav a { font-size: 1.15rem; padding: 8px 0; }
-  .nav__cta { margin-top: 8px; padding: 12px 32px; }
+  /* .nav .nav__cta : doit l'emporter sur « .nav a » juste au-dessus */
+  .nav .nav__cta {
+    align-self: stretch;
+    margin-top: 12px;
+    padding: 14px 24px;
+    text-align: center;
+  }
 
   .kana-sky span { font-size: calc(var(--s) * .7); }
 
