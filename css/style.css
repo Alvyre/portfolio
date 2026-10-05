@@ -78,6 +78,8 @@ p { margin: 0 0 1em; }
    ========================================================== */
 
 .kana-sky {
+  /* Coefficient global d'opacité des kana : baisser pour les rendre plus discrets */
+  --kana-alpha: .6;
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -109,11 +111,11 @@ p { margin: 0 0 1em; }
     translate: 0 0;
     opacity: 0;
   }
-  10% { opacity: var(--o); }
+  10% { opacity: calc(var(--o) * var(--kana-alpha)); }
   25% { translate: calc(var(--drift) * .6) -30vh; }
   50% { translate: calc(var(--drift) * -.4) -60vh; }
   75% { translate: var(--drift) -90vh; }
-  90% { opacity: var(--o); }
+  90% { opacity: calc(var(--o) * var(--kana-alpha)); }
   100% {
     translate: calc(var(--drift) * .2) calc(-100vh - 8rem);
     opacity: 0;
